@@ -7,9 +7,9 @@
 </template>
 
 <script setup>
-import ListingAddress from '@/Components/ListingAddress.vue';
+import ListingAddress from '@/Components/ListingAddress.vue'
 import { Link } from '@inertiajs/inertia-vue3'
 defineProps({
   listings: Array,
-});
+})
 </script>
