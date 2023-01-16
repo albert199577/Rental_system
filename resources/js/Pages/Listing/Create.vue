@@ -3,7 +3,7 @@
     <div>
       <div>
         <label>Beds</label>
-        <input type="text" v-model.number="form.beds"/>
+        <input v-model.number="form.beds" type="text" />
         <div v-if="form.errors.beds">
           {{ form.errors.beds }}
         </div>
@@ -11,7 +11,7 @@
       
       <div>
         <label>Baths</label>
-        <input type="text" v-model.number="form.baths"/>
+        <input v-model.number="form.baths" type="text" />
         <div v-if="form.errors.baths">
           {{ form.errors.baths }}
         </div>
@@ -19,7 +19,7 @@
 
       <div>
         <label>Area</label>
-        <input type="text" v-model.number="form.area"/>
+        <input v-model.number="form.area" type="text" />
         <div v-if="form.errors.area">
           {{ form.errors.area }}
         </div>
@@ -27,7 +27,7 @@
 
       <div>
         <label>City</label>
-        <input type="text" v-model="form.city"/>
+        <input v-model="form.city" type="text" />
         <div v-if="form.errors.city">
           {{ form.errors.city }}
         </div>
@@ -35,7 +35,7 @@
 
       <div>
         <label>Post Code</label>
-        <input type="text" v-model="form.code"/>
+        <input v-model="form.code" type="text" />
         <div v-if="form.errors.code">
           {{ form.errors.code }}
         </div>
@@ -43,7 +43,7 @@
 
       <div>
         <label>Street</label>
-        <input type="text" v-model="form.street"/>
+        <input v-model="form.street" type="text" />
         <div v-if="form.errors.street">
           {{ form.errors.street }}
         </div>
@@ -51,7 +51,7 @@
 
       <div>
         <label>Street Nr</label>
-        <input type="text" v-model.number="form.street_nr"/>
+        <input v-model.number="form.street_nr" type="text" />
         <div v-if="form.errors.street_nr">
           {{ form.errors.street_nr }}
         </div>
@@ -59,7 +59,7 @@
 
       <div>
         <label>Price</label>
-        <input type="text" v-model.number="form.price"/>
+        <input v-model.number="form.price" type="text" />
         <div v-if="form.errors.price">
           {{ form.errors.price }}
         </div>
@@ -85,7 +85,7 @@ const form = useForm({
   price: 0,
 })
 
-const create = () => form.post('/listing')
+const create = () => form.post(route('listing.store'))
 </script>
 <style scoped>
 label {
